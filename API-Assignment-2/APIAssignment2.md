@@ -9,14 +9,14 @@ Ans: I sent a get request to postman-echo.com/get from postman. So, postman is a
 acting as API server. After getting the above request, API server processed it and respond back to postman. At last 
 postman received the response and displayed in the response body.
 
-![plot](./Images/1.jpg)
+![plot](./Images/1.JPG)
 
 #### 2. Create your first collection, Collection Name: api-lab<br>- Save your request from step 1 in collection<br>- Save all your requests in this collection
 
 Ans. First I have created a new collection by clicking the "+" beside collection tab and named it as api-lab. Then I 
 saved the request "GET postman-echo.com/get" to that collection.
 
-![plot](./Images/2.jpg)
+![plot](./Images/2.JPG)
 
 #### 3. Building Requests
 
@@ -32,13 +32,13 @@ Ans. When I tried to send request, the response was showing "unauthorized" with 
 username: postman<br>
 password: password
 
-![plot](./Images/3.jpg)
+![plot](./Images/3.JPG)
 
 #### 2. Get information about all users using URI: https://reqres.in/api/users. <br>How many lists can you see in the response body?
 
 Ans: I can see one list "data" in the response body.
 
-![plot](./Images/4.jpg)
+![plot](./Images/4.JPG)
 
 #### 3. Get information about the user with id 3 using URI: https://reqres.in/api/users/3.
 #### How many lists can you see in the response body? What are the available property(Key) names in the response body?
@@ -60,14 +60,14 @@ Within the object of support we have followings property(key):
 - url
 - text
 
-![plot](./Images/5.jpg)
+![plot](./Images/5.JPG)
 
 #### 4. Delete the User with id 9 using URI https://reqres.in/api/users/9
 #### What is the response? How many users are now on the users list? https://reqres.in/api/users? Can you see the deleted user record?
 
 Ans. The postman response is 204- No Content.
 
-![plot](./Images/6.jpg)
+![plot](./Images/6.JPG)
 
 Still 12 users on the list. Yes, I can see the deleted user record.
 
@@ -76,7 +76,7 @@ Still 12 users on the list. Yes, I can see the deleted user record.
 
 Ans. No list in the response body. No available property was there.
 
-![plot](./Images/7.jpg)
+![plot](./Images/7.JPG)
 
 #### 6. Create a new user in a system using URI: https://reqres.in/api/users. name: yourname, job: dreamjob
 #### What is the response code: What are the available property(key) names in the response body? What is the value of response Header Etag?
@@ -89,18 +89,18 @@ The primary object have followings property(key):
 - id
 - createdAt
 
-![plot](./Images/8.jpg)
+![plot](./Images/8.JPG)
 
 The value of response header Etag is W/"52-cZQo+sNNh9AH7XGp78lQFy52dB4"
 
-![plot](./Images/9.jpg)
+![plot](./Images/9.JPG)
 
 #### 7. Sign in to the system using URI: https://reqres.in/api/login and {"email": "peter@klaven"}
 #### What is the response code?
 
 Ans. The response code is 400 Bad Request.
 
-![plot](./Images/10.jpg)
+![plot](./Images/10.JPG)
 
 #### 8. Sign in to the system using URI: https://reqres.in/api/login and
 ````json
@@ -114,11 +114,11 @@ Ans. The response code is 400 Bad Request.
 
 Ans. The value of response header Etag is W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"
 
-![plot](./Images/12.jpg)
+![plot](./Images/12.JPG)
 
 The response is as follows:
 
-![plot](./Images/11.jpg)
+![plot](./Images/11.JPG)
 
 #### 9. Get information about all planets using URI: https://swapi.dev/api/planets. 
 #### Carefully observe the response body and make a list of all attributes and write their data types.
@@ -126,10 +126,14 @@ The response is as follows:
 
 Ans. There is one list I can see in the response body. Every object under that array has two lists.
 
-![plot](./Images/13.jpg)
+![plot](./Images/13.JPG)
 
 The data type of the Attributes are given below:
 
+- count: number
+- next: string
+- previous: null
+- results: array
 - name: string
 - rotation_period: string
 - orbital_period: string
@@ -150,17 +154,21 @@ The data type of the Attributes are given below:
 
 Ans. 14 properties can be seen here.
 
-![plot](./Images/14.jpg)
+![plot](./Images/14.JPG)
 
 #### 11. Get information about all the starships using URI: https://swapi.dev/api/starships. 
 #### Carefully observe the response body and make a list of all attributes and write their data types. How many lists can you see in the response body?
 
 Ans. There is one list I can see in the response body. However, every object under that array has two lists.
 
-![plot](./Images/15.jpg)
+![plot](./Images/15.JPG)
 
 The data type of the Attributes are given below:
 
+- count: number
+- next: string
+- previous: null
+- results: array
 - name: string
 - model: string
 - manufacturer: string
@@ -190,10 +198,14 @@ Ans. I can see two lists.
 
 Ans. There is one list I can see in the response body. However, every object under that array has five lists.
 
-![plot](./Images/16.jpg)
+![plot](./Images/16.JPG)
 
 The data type of the Attributes are given below:
 
+- count: number
+- next: string
+- previous: null
+- results: array
 - title: string
 - episode_id: number
 - opening_crawl: string
@@ -224,21 +236,21 @@ Ans. I can see one list in the response body.
 
 Ans. The response is 200 OK - Standard Response for successful HTTP requests. The response is as follows:
 
-![plot](./Images/17.jpg)
+![plot](./Images/17.JPG)
 
 #### 17. Get details about booking id 23 using URI: https://restful-booker.herokuapp.com/booking/3
 #### What is the response?
 
 Ans. The response is 200 OK - Standard Response for successful HTTP requests. The response is as follows:
 
-![plot](./Images/18.jpg)
+![plot](./Images/18.JPG)
 
 #### 18. Get information about all planets using URI: https://jsonplaceholder.typicode.com/users
 #### What is the response? How many lists can you see in the response body?
 
 Ans. The response is 200 OK - Standard Response for successful HTTP requests. The response is as follows:
 
-![plot](./Images/19.jpg)
+![plot](./Images/19.JPG)
 
 The response body has one list.
 
@@ -247,10 +259,14 @@ The response body has one list.
 
 Ans.  There is one list I can see in the response body. However, every object under that array has two lists.
 
-![plot](./Images/20.jpg)
+![plot](./Images/20.JPG)
 
 The data type of the Attributes are given below:
 
+- count: number
+- next: string
+- previous: null
+- results: array
 - name: String
 - classification: String
 - designation: String
@@ -339,7 +355,7 @@ Followings are the data type of all attributes:
 - employee_age: number
 - profile_image: string
 
-![plot](./Images/21.jpg)
+![plot](./Images/21.JPG)
 
 #### 22. Get a single employee data using URI: http://dummy.restapiexample.com/api/v1/employee/3
 #### How many data you can see in response body? What is the response status?
@@ -348,7 +364,7 @@ Ans. I can see one data.
 
 The response status is 200 OK
 
-![plot](./Images/22.jpg)
+![plot](./Images/22.JPG)
 
 #### 23.Create a new employee in a system by using URI: http://dummy.restapiexample.com/api/v1/create Verb: POST Request Body:
 
@@ -363,7 +379,7 @@ The response status is 200 OK
 
 Ans. Standard response for successful HTTP request. Response is as follows:
 
-![plot](./Images/23.jpg)
+![plot](./Images/23.JPG)
 
 The id value is 1315.
 
@@ -374,7 +390,7 @@ The id value is 1315.
 
 Ans. The response is as follows:
 
-![plot](./Images/24.jpg)
+![plot](./Images/24.JPG)
 
 Still there are 24 employees in the employees list.
 
@@ -392,7 +408,7 @@ Yes, I can see the deleted employee record.
 
 Ans. The response is as follows:
 
-![plot](./Images/25.jpg)
+![plot](./Images/25.JPG)
 
 The available property(key) is "error"
 
@@ -400,23 +416,23 @@ The available property(key) is "error"
 
 Ans: The response is as follows:
 
-![plot](./Images/26.jpg)
+![plot](./Images/26.JPG)
 
 #### 27. A simple health check endpoint to confirm whether the API is up and running using https://restful-booker.herokuapp.com/ping
 #### What is the response?
 
 Ans: The response is as follows:
 
-![plot](./Images/27.jpg)
+![plot](./Images/27.JPG)
 
 #### 28. Get information using Delayed Response using URI: https://reqres.in/api/users?delay=3
 #### What is the response? How many seconds delay to respond?
 
 Ans: The response is as follows:
 
-![plot](./Images/28.jpg)
+![plot](./Images/28.JPG)
 
-Three seconds delay to respond.
+3.27 seconds delay to respond.
 
 #### 29. Get information about vehicles using URL https://swapi.dev/api/vehicles/schema/
 #### What type of response it is? What is response status code?
@@ -425,7 +441,7 @@ Ans: Type of response: Data Not Found
 
 Status Code: 404
 
-![plot](./Images/29.jpg)
+![plot](./Images/29.JPG)
 
 #### 30. Get information about starships using URL https://swapi.dev/api/starships/schema/
 #### What type of response it is? Write down the response status code.
@@ -437,7 +453,7 @@ Status Code: 404
 
 Property(Key) name: "detail"
 
-![plot](./Images/30.jpg)
+![plot](./Images/30.JPG)
 
 #### 31. Let's try something interesting. Can we remember bash script? Choose any 5 GET API. Use one bash script to make call and save the response in 5 different json file. If you can't achieve it that's fine. This is for fun.Example curl www.google.com >> response1.json
 
