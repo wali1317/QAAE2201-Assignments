@@ -1,3 +1,5 @@
+# SQL Assignment 101
+
 1. PostgreSQL version 12.10 is installed in my window machine folLowing the instruction.
 <br>
 
