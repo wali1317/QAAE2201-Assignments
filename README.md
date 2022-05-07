@@ -10,3 +10,6 @@ API Assignment-1:
 -----------------
 This Assignment is described in APIAssignment1.md file.
 
+SQL Assignment-1:
+-----------------
+This Assignment is described in sqlAssignment1.md file.
