@@ -17,3 +17,7 @@ This Assignment is described in sqlAssignment1.md file.
 SQL Assignment-2:
 -----------------
 This Assignment is described in sqlAssignment2.md file.
+
+SQL Assignment-3:
+-----------------
+This Assignment is described in sqlAssignment3.md file.
