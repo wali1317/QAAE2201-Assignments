@@ -33,9 +33,9 @@ public class BrowserApp {
         WebDriver izaanHomeChrome = new ChromeDriver();
         String urlApply = "https://www.izaanschool.com/apply";
         izaanHomeChrome.get(urlApply);
+        izaanHomeChrome.manage().window().maximize();
         izaanHomeChrome.findElement(By.id("navbarLandings")).click();
         System.out.println("Clicked Home Button");
-        izaanHomeChrome.close();
     }
 
     public static void sendKeyToGoogle() {
@@ -51,10 +51,10 @@ public class BrowserApp {
 
         String webDriverPath = "WebDriver/chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", webDriverPath);
-//        openIzaanApp();
-//        openIzaanApply();
+        openIzaanApp();
+        openIzaanApply();
         clickHomeButton();
-//        sendKeyToGoogle();
+        sendKeyToGoogle();
     }
 }
 
